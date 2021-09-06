@@ -8,3 +8,33 @@ body {
     box-sizing: border-box;
 }
 
+.grid {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    min-height: 1000px;
+
+    background-color: rgba(119, 115, 115, .5);
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid__item {
+    width: 380px;
+    height: 380px;
+
+    background-color: rgba(78, 209, 61, 0.7);
+    border: solid 1px rgb(39, 151, 58);
+}
+
+@media (max-width: 1240px) {
+    .grid {
+        width: 960px;
+    }
+
+    .grid__item {
+        width: 300px;
+        height: 300px;
+    }
+}
